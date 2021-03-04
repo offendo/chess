@@ -9,9 +9,8 @@ version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/chess#readme>
 homepage:       https://github.com/githubuser/chess#readme
 bug-reports:    https://github.com/githubuser/chess/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2021 Author name here
+author:         Nilay
+maintainer:     nilaypatel2@gmail.com
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -25,13 +24,19 @@ source-repository head
 
 library
   exposed-modules:
+      Board
       Lib
+      Piece
   other-modules:
       Paths_chess
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , matrix
+    , megaparsec
+    , split
+    , vector
   default-language: Haskell2010
 
 executable chess-exe
@@ -44,6 +49,10 @@ executable chess-exe
   build-depends:
       base >=4.7 && <5
     , chess
+    , matrix
+    , megaparsec
+    , split
+    , vector
   default-language: Haskell2010
 
 test-suite chess-test
@@ -57,4 +66,8 @@ test-suite chess-test
   build-depends:
       base >=4.7 && <5
     , chess
+    , matrix
+    , megaparsec
+    , split
+    , vector
   default-language: Haskell2010
