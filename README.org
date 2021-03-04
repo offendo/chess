@@ -1,0 +1,5 @@
+* chess
+
+Chess is fun.
+
+All I've got so far is a way to read/write to FEN format.
